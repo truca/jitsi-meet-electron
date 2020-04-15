@@ -3,6 +3,7 @@
 import { AtlasKitThemeProvider } from '@atlaskit/theme';
 
 import React, { Component } from 'react';
+import moment from 'moment';
 import { Route, Switch } from 'react-router';
 import { ConnectedRouter as Router } from 'react-router-redux';
 
@@ -10,6 +11,8 @@ import { Conference } from '../../conference';
 import config from '../../config';
 import { history } from '../../router';
 import { Welcome } from '../../welcome';
+
+moment.locale('es');
 
 /**
  * Main component encapsulating the entire application.

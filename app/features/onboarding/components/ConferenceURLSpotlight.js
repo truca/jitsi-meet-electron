@@ -42,7 +42,7 @@ class ConferenceURLSpotlight extends Component<Props, *> {
                 actions = { [
                     {
                         onClick: this._next,
-                        text: 'Next'
+                        text: 'Siguiente'
                     }
                 ] }
                 dialogPlacement = 'bottom center'

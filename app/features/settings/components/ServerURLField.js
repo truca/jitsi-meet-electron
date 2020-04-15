@@ -71,7 +71,7 @@ class ServerURLField extends Component<Props, State> {
                         = { 'Invalid Server URL or external API not enabled' }
                     isInvalid = { !this.state.isValid }
                     isValidationHidden = { this.state.isValid }
-                    label = 'Server URL'
+                    label = 'URL del servidor'
                     onBlur = { this._onServerURLSubmit }
                     onChange = { this._onServerURLChange }
                     placeholder = { config.defaultServerURL }

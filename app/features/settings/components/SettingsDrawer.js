@@ -108,7 +108,7 @@ class SettingsDrawer extends Component<Props, *> {
                             name = 'name-setting'>
                             <form onSubmit = { this._onNameFormSubmit }>
                                 <FieldText
-                                    label = 'Name'
+                                    label = 'Nombre'
                                     onBlur = { this._onNameBlur }
                                     shouldFitContainer = { true }
                                     type = 'text'

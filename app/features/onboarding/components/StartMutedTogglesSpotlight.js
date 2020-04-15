@@ -42,7 +42,7 @@ class StartMutedTogglesSpotlight extends Component<Props, *> {
                 actions = { [
                     {
                         onClick: this._next,
-                        text: 'Next'
+                        text: 'Siguiente'
                     }
                 ] }
                 dialogPlacement = 'left top'
