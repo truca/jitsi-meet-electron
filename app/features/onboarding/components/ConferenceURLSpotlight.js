@@ -47,9 +47,9 @@ class ConferenceURLSpotlight extends Component<Props, *> {
                 ] }
                 dialogPlacement = 'bottom center'
                 target = { 'conference-url' } >
-                Enter the name (or full URL) of the room you want to join. You
-                may make a name up, just let others know so they enter the same
-                name.
+                Ingresa el nombre (o la URL completa) de la llamada a la que te quieres unir.
+                Puedes poner cualquier nombre, pero avísale a los demás para que ingresen
+                el mismo nombre
             </Spotlight>
         );
     }

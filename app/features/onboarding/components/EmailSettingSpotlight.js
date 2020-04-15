@@ -47,8 +47,8 @@ class EmailSettingSpotlight extends Component<Props, *> {
                 ] }
                 dialogPlacement = 'left top'
                 target = { 'email-setting' } >
-                The email you enter here will be part of your user profile and
-                it will be used to display your stored avatar in gravatar.com .
+                El email que ingreses aquí sera2 parte de tu perfil de usuario y
+                será utilizado para mostrar tu avatar guardado en gravatar.com.
             </Spotlight>
         );
     }

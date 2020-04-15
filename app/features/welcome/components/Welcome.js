@@ -200,7 +200,7 @@ class Welcome extends Component<Props, State> {
                             isInvalid = { locationError }
                             isLabelHidden = { true }
                             onChange = { this._onURLChange }
-                            placeholder = 'Enter a name for your conference'
+                            placeholder = 'Ingresa un nombre para tu conferencia'
                             shouldFitContainer = { true }
                             type = 'text'
                             value = { this.state.url } />
@@ -210,7 +210,7 @@ class Welcome extends Component<Props, State> {
                     appearance = 'primary'
                     onClick = { this._onJoin }
                     type = 'button'>
-                    GO
+                    Ir
                 </Button>
             </Header>
         );

@@ -13,7 +13,7 @@ export default {
     /**
      * Application name.
      */
-    appName: 'Jitsi Meet',
+    appName: 'BoxMagic Meet',
 
     /**
      * The default server URL of Jitsi Meet Deployment that will be used.
@@ -23,7 +23,7 @@ export default {
     /**
      * URL to send feedback.
      */
-    feedbackURL: 'mailto:support@jitsi.org',
+    feedbackURL: 'mailto:hola@boxmagic.cl',
 
     /**
      * The URL of Privacy Policy Page.
