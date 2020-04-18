@@ -16,7 +16,6 @@ import { AvatarContainer, SettingsContainer, TogglesContainer } from '../styled'
 import { setEmail, setName } from '../actions';
 
 import AlwaysOnTopWindowToggle from './AlwaysOnTopWindowToggle';
-import ServerURLField from './ServerURLField';
 import StartMutedToggles from './StartMutedToggles';
 
 type Props = {
@@ -126,10 +125,10 @@ class SettingsDrawer extends Component<Props, *> {
                                     value = { this.props._email } />
                             </form>
                         </SpotlightTarget>
-                        <SpotlightTarget
+                        {/* <SpotlightTarget
                             name = 'server-setting'>
                             <ServerURLField />
-                        </SpotlightTarget>
+                        </SpotlightTarget> */}
                         <TogglesContainer>
                             <SpotlightTarget
                                 name = 'start-muted-toggles'>
