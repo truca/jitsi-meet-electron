@@ -1,8 +1,6 @@
 // @flow
 
 import Button from '@atlaskit/button';
-import { FieldTextStateless } from '@atlaskit/field-text';
-import { SpotlightTarget } from '@atlaskit/onboarding';
 import Page from '@atlaskit/page';
 import { AtlasKitThemeProvider } from '@atlaskit/theme';
 
@@ -16,7 +14,7 @@ import { Onboarding, startOnboarding } from '../../onboarding';
 import { RecentList } from '../../recent-list';
 import { normalizeServerURL } from '../../utils';
 
-import { Body, Form, Header, Wrapper } from '../styled';
+import { Body, Header, Wrapper } from '../styled';
 
 
 type Props = {
@@ -54,18 +52,18 @@ class Welcome extends Component<Props, State> {
         super(props);
 
         // Initialize url value in state if passed using location state object.
-        let url = '';
+        // let url = '';
 
         // Check and parse url if exists in location state.
-        if (props.location.state) {
-            const { room, serverURL } = props.location.state;
+        // if (props.location.state) {
+        //     const { room, serverURL } = props.location.state;
 
-            if (room && serverURL) {
-                url = `${serverURL}/${room}`;
-            }
-        }
+        //     if (room && serverURL) {
+        //         url = `${serverURL}/${room}`;
+        //     }
+        // }
 
-        this.state = { url };
+        this.state = { url: 'https://boxmagic.online/BoxMagic' };
 
         // Bind event handlers.
         this._onURLChange = this._onURLChange.bind(this);
@@ -188,12 +186,12 @@ class Welcome extends Component<Props, State> {
      * @returns {ReactElement}
      */
     _renderHeader() {
-        const locationState = this.props.location.state;
-        const locationError = locationState && locationState.error;
+        // const locationState = this.props.location.state;
+        // const locationError = locationState && locationState.error;
 
         return (
             <Header>
-                <SpotlightTarget name = 'conference-url'>
+                {/* <SpotlightTarget name = 'conference-url'>
                     <Form onSubmit = { this._onFormSubmit }>
                         <FieldTextStateless
                             autoFocus = { true }
@@ -205,12 +203,12 @@ class Welcome extends Component<Props, State> {
                             type = 'text'
                             value = { this.state.url } />
                     </Form>
-                </SpotlightTarget>
+                </SpotlightTarget> */}
                 <Button
                     appearance = 'primary'
                     onClick = { this._onJoin }
                     type = 'button'>
-                    Ir
+                    Ir a BoxMagic
                 </Button>
             </Header>
         );
