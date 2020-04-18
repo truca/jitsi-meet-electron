@@ -14,6 +14,18 @@ import {
 } from '../styled';
 import type { RecentListItem } from '../types';
 
+const clearTilde = s =>
+    s.replace(/Á/g, 'A').replace(/á/g, 'a')
+        .replace(/É/g, 'E')
+        .replace(/é/g, 'e')
+        .replace(/Í/g, 'I')
+        .replace(/í/g, 'i')
+        .replace(/Ó/g, 'O')
+        .replace(/ó/g, 'o')
+        .replace(/Ú/g, 'U')
+        .replace(/ú/g, 'u');
+
+
 type Props = {
 
     /**
@@ -108,7 +120,7 @@ class RecentList extends Component<Props, *> {
         const start = moment(startTime);
         const end = moment(endTime || Date.now());
 
-        return moment.duration(end.diff(start)).humanize();
+        return clearTilde(moment.duration(end.diff(start)).humanize());
     }
 
     /**
@@ -120,7 +132,7 @@ class RecentList extends Component<Props, *> {
     _renderStartTime(conference: RecentListItem) {
         const { startTime } = conference;
 
-        return moment(startTime).calendar();
+        return clearTilde(moment(startTime).calendar());
     }
 }
 
