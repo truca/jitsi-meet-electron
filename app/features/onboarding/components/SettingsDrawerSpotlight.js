@@ -45,7 +45,7 @@ class SettingsDrawerSpotlight extends Component<Props, *> {
                 dialogPlacement = 'right top'
                 target = { 'settings-drawer-button' }
                 targetOnClick = { this._next }>
-                Click aquí para abrir el panel de las configuraciones.
+                Click aqui para abrir el panel de las configuraciones.
             </Spotlight>
         );
     }

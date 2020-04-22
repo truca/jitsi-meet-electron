@@ -47,7 +47,7 @@ class NameSettingSpotlight extends Component<Props, *> {
                 ] }
                 dialogPlacement = 'left top'
                 target = { 'name-setting' } >
-                Este será el nombre que mostrarás, otros te verán con este
+                Este sera el nombre que mostraras, otros te veran con este
                 nombre.
             </Spotlight>
         );

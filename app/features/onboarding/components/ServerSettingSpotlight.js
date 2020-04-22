@@ -47,7 +47,7 @@ class ServerSettingSpotlight extends Component<Props, *> {
                 ] }
                 dialogPlacement = 'left top'
                 target = { 'server-setting' } >
-                Este será el servidor donde tus conferencias tendrán lugar.
+                Este sera el servidor donde tus conferencias tendran lugar.
                 Puedes usar el tuyo, pero no es necesario!
             </Spotlight>
         );

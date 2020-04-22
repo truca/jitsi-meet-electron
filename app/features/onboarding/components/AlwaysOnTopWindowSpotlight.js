@@ -51,7 +51,7 @@ class AlwaysOnTopWindowSpotlight extends Component<Props, *> {
                 target = { 'always-on-top-window' } >
                 Puedes activar/desactivar si quieres activar la ventana "siempre arriba",
                 que es mostrado cuando la ventana principal pierde el foco.
-                Esto será aplicado a todas las conferencias.
+                Esto sera aplicado a todas las conferencias.
             </Spotlight>
         );
     }

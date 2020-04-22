@@ -96,7 +96,7 @@ export default class HelpButton extends Component< *, State> {
                 trigger = { <HelpIcon /> }>
                 <Group heading = 'Ayuda'>
                     <Item onActivate = { this._onTermsClick }>
-                        Términos
+                        Terminos
                     </Item>
                     <Item onActivate = { this._onPrivacyClick }>
                         Privacidad
@@ -111,7 +111,7 @@ export default class HelpButton extends Component< *, State> {
                         Fuente
                     </Item> */}
                     <Item>
-                        Versión: { version }
+                        Version: { version }
                     </Item>
                 </Group>
             </Droplist>

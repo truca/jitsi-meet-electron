@@ -47,8 +47,8 @@ class StartMutedTogglesSpotlight extends Component<Props, *> {
                 ] }
                 dialogPlacement = 'left top'
                 target = { 'start-muted-toggles' } >
-                Puedes activar/desactivar si quieres comenzar con tu audio ó video
-                silenciado aquí. Esto será aplicado a todas las conferencias.
+                Puedes activar/desactivar si quieres comenzar con tu audio o video
+                silenciado aqui. Esto sera aplicado a todas las conferencias.
             </Spotlight>
         );
     }
