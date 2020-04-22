@@ -1,9 +1,9 @@
 {
-  "name": "boxmagic-meet-electron",
+  "name": "boxmagic-live-electron",
   "version": "2.0.2",
-  "description": "Electron application for BoxMagic Meet",
+  "description": "Electron application for BoxMagic Live",
   "main": "./build/main.js",
-  "productName": "BoxMagic Meet",
+  "productName": "BoxMagic Live",
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
     "clean": "rm -rf node_modules build dist",
@@ -16,8 +16,8 @@
     "watch": "webpack --config ./webpack.renderer.js --mode development --watch --watch-poll"
   },
   "build": {
-    "appId": "org.boxmagic.boxmagic-meet",
-    "productName": "BoxMagic Meet",
+    "appId": "org.boxmagic.boxmagic-live",
+    "productName": "BoxMagic Live",
     "generateUpdatesFilesForAllChannels": true,
     "files": [
       "**/*",
@@ -26,15 +26,15 @@
       "!main.js"
     ],
     "mac": {
-      "artifactName": "boxmagic-meet.${ext}",
+      "artifactName": "boxmagic-live.${ext}",
       "category": "public.app-category.video",
       "darkModeSupport": true
     },
     "linux": {
-      "artifactName": "boxmagic-meet-${arch}.${ext}",
+      "artifactName": "boxmagic-live-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "BoxMagic Meet Desktop App",
-      "executableName": "boxmagic-meet",
+      "description": "BoxMagic Live Desktop App",
+      "executableName": "boxmagic-live",
       "target": [
         {
           "arch": "x64",
@@ -43,7 +43,7 @@
       ]
     },
     "win": {
-      "artifactName": "boxmagic-meet.${ext}",
+      "artifactName": "boxmagic-live.${ext}",
       "target": [
         {
           "arch": [
@@ -70,7 +70,7 @@
     "webrtc",
     "xmpp",
     "electron",
-    "jitsi-meet"
+    "boxmagic-live"
   ],
   "author": "Jitsi Team <support@jitsi.org>",
   "readmeFilename": "README.md",
