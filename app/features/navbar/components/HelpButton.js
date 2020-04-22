@@ -101,15 +101,15 @@ export default class HelpButton extends Component< *, State> {
                     <Item onActivate = { this._onPrivacyClick }>
                         Privacidad
                     </Item>
-                    <Item onActivate = { this._onSendFeedbackClick }>
+                    {/* <Item onActivate = { this._onSendFeedbackClick }>
                         Enviar Feedback
-                    </Item>
+                    </Item> */}
                     <Item onActivate = { this._onAboutClick }>
                         Acerca
                     </Item>
-                    <Item onActivate = { this._onSourceClick }>
+                    {/* <Item onActivate = { this._onSourceClick }>
                         Fuente
-                    </Item>
+                    </Item> */}
                     <Item>
                         Versión: { version }
                     </Item>
